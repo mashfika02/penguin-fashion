@@ -4,26 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Penguin Fashion</title>
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header class="bg-[#FFFBF0] px-32">
+    <header class="bg-[#FFFBF0] pb-20 px-4 md:px-32">
       <!-- nav -->
-      <nav></nav>
+      <nav class="flex justify-between pt-5 pb-6 md:mb-5 md:pt-12 items-center">
+        <img class="w-44 h-7 md:w-60 md:h-10" src="icons/logo.png" alt="" />
+
+        <!-- ham -->
+        <label class="md:hidden" for=""
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.4"
+            stroke="currentColor "
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </label>
+
+        <ul
+          class="hidden md:flex md:font-roboto md:font-medium md:text-[#3C3C3C]"
+        >
+          <li class="md:ml-14"><a href="">Home</a></li>
+          <li class="md:ml-14"><a href="">Product</a></li>
+          <li class="md:ml-14"><a href="">About us</a></li>
+          <li class="md:ml-14"><a href="">Contact us</a></li>
+        </ul>
+      </nav>
       <!-- banner -->
-      <div class="flex justify-between items-center">
+      <div class="flex flex-col md:flex-row justify-between items-center">
         <!-- left side -->
-        <div>
-          <h1 class="text-7xl uppercase">
+        <div class="space-y-3">
+          <h1 class="text-7xl uppercase font-bebas">
             <span class="text-[#FABE4C]"> Be the Penguins</span> <br />
-            of Winter
+            <span class="text-[#363958]"> of Winter</span>
           </h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <p class="font-roboto">
+            Lorem Ipsum is simply dummy text of the printing <br />
+            and typesetting industry.
           </p>
           <button
-            class="py-4 px-9 bg-gray-700 rounded-xl uppercase text-white font-medium flex gap-2"
+            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium flex gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +98,7 @@
         </div>
       </div>
     </header>
+    <!-- main -->
     <main></main>
     <footer></footer>
   </body>
